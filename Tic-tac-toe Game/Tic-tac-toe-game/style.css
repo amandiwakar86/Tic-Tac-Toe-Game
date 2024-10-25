@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b5555;
+    text-align: center;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#sms {
+    font-size: 30px;
+    color: #c07c2d;
+}
+
+.smsContainer {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
+
+h1 {
+    color: #b899e0;
+    font-size: 50px;
+}
+
+.game-container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0);
+    overflow: hidden;
+    gap: 0px 30px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px rgb(224, 152, 92),
+        0px 0px rgb(69, 199, 216);
+    background-color: #163a43;
+    font-size: 80px;
+    color: #d69158;
+}
+
+.box:hover {
+    background-color: #1e4b57;
+    box-shadow: 0px 0px 10px rgb(204, 236, 113),
+        0px 0px rgb(69, 199, 216);
+    animation: change-color 0.2s ease infinite;
+}
+
+@keyframes change-color {
+    0% {
+        box-shadow: 0px 0px 10px rgb(204, 236, 113),
+            0px 0px rgb(69, 199, 216);
+    }
+
+
+    25% {
+        box-shadow: 0px 0px 10px rgb(113, 222, 236),
+            0px 0px rgb(69, 199, 216);
+    }
+
+
+    50% {
+        box-shadow: 0px 0px 10px rgb(58, 13, 129),
+            0px 0px rgb(69, 199, 216);
+    }
+
+
+    100% {
+        box-shadow: 0px 0px 10px rgb(231, 141, 6),
+            0px 0px rgb(69, 199, 216);
+    }
+}
+
+#reset-btn {
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f7c6c6;
+    font-size: 17px;
+    color: #c44d09;
+}
+
+#reset-btn:hover {
+    background-color: #f5cdcd;
+}
+
+.newGame {
+    width: 110px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f7c6c6;
+    font-size: 17px;
+    color: #c44d09;
+}
